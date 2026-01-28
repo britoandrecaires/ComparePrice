@@ -4,4 +4,4 @@
 *.user
 *.suo
 
-appsettings.Development.json
+appsettings.json
