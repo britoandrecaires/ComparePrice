@@ -1,0 +1,237 @@
+@page
+@model SistemaPrecos.Web.Pages.Relatorios.EscolherRelatorioModel
+@{
+    ViewData["Title"] = "Escolher Relatório";
+}
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@{
+    var adminId = HttpContextAccessor.HttpContext?.Request.Cookies["userId"];
+}
+
+<style>
+    /* ======  ESTILOS GERAIS  ====== */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        color: #2c2c2c;
+    }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo { height: 80px; }
+
+    /* ======  CARD / CONTAINER  ====== */
+    .container {
+        position: relative;
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 2rem 2.5rem 3rem;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    /* ======  BOTÃO VOLTAR  ====== */
+    .voltar {
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        display: inline-block;
+        padding: .6rem 1rem;
+        background: #333;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background .2s;
+    }
+    .voltar:hover { background: #111; }
+
+    /* ======  CONTEÚDO PRINCIPAL  ====== */
+    h2 {
+        margin-top: 4.5rem;                 /* espaço depois do botão */
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .relatorio-button {
+        display: inline-block;
+        margin: 1rem;
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        background: #333;
+        border: none;
+        cursor: pointer;
+        transition: background .3s, transform .2s;
+    }
+    .relatorio-button:hover {
+        background: #111;
+        transform: scale(1.05);
+    }
+
+    /* ======  MODAIS E FAB  ====== */
+    /* (tudo igual, só reorganizado para manter) */
+    .mensagem-fab {
+        position: fixed; right: 30px; bottom: 30px;
+        width: 60px; height: 60px;
+        background: #333; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        cursor: pointer; z-index: 1000;
+        transition: background .3s;
+    }
+    .mensagem-fab:hover { background: #111; }
+    .mensagem-fab svg { width: 24px; height: 24px; fill: #fff; }
+
+    .mensagem-modal {
+        position: fixed; bottom: 100px; right: 30px;
+        width: 300px; display: none; flex-direction: column;
+        background: #fff; border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,.1);
+        padding: 1rem; gap: .5rem; z-index: 1001;
+    }
+    .mensagem-modal textarea {
+        width: 100%; height: 100px; resize: none;
+        border: 1px solid #ccc; border-radius: 8px; padding: .5rem;
+    }
+    .mensagem-modal button {
+        align-self: flex-end; border: none;
+        background: #333; color: #fff;
+        padding: .5rem 1rem; border-radius: 6px; cursor: pointer;
+    }
+    .mensagem-modal button:hover { background: #111; }
+
+    /* Modal genérico (loja / produto) */
+    .modal-overlay {
+        display: none; position: fixed; top:0; left:0; right:0; bottom:0;
+        background: rgba(0,0,0,.4); justify-content: center; align-items: center;
+        z-index: 2000;
+    }
+    .modal-conteudo {
+        background: #fff; padding: 2rem;
+        border-radius: 10px; width: 300px; text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    }
+    .modal-conteudo h3 { margin-bottom: 1rem; }
+    .modal-conteudo select {
+        width: 100%; margin-bottom: 1rem;
+        padding: .6rem; font-size: 1rem; border-radius: 6px;
+    }
+    .modal-botoes {
+        display: flex; gap: 1rem; justify-content: center;
+    }
+</style>
+
+<!-- ==========  MARCA & TOPBAR  ========== -->
+<div class="topbar">
+    <img src="/img/CP.png" alt="Compare Price" class="logo" />
+</div>
+
+<!-- ==========  CONTAINER / CARD  ========== -->
+<div class="container">
+
+    <a href="/MainAdmin" class="voltar">Voltar</a>
+
+    <h2>Escolher Relatório para Imprimir</h2>
+
+    <!-- Botões de relatório -->
+    <a class="relatorio-button"
+       href="http://localhost:5000/admin/relatorios/gerar-pdf/geral-lojas"
+       target="_blank">PDF Geral de Lojas</a>
+
+    <button class="relatorio-button" onclick="abrirModalLoja()">PDF Loja (Selecionar)</button>
+    <button class="relatorio-button" onclick="abrirModalProduto()">PDF Produto (Selecionar)</button>
+
+</div>
+
+<!-- ==========  MODAIS (iguais ao original)  ========== -->
+<div id="modalLoja" class="modal-overlay">
+    <div class="modal-conteudo">
+        <h3>Selecionar Loja</h3>
+        <select id="modalLojaSelect">
+            @foreach (var loja in Model.Lojas)
+            {
+                <option value="@loja.Value">@loja.Text</option>
+            }
+        </select>
+        <div class="modal-botoes">
+            <button onclick="gerarRelatorioLojaViaModal()" class="relatorio-button">Gerar PDF</button>
+            <button onclick="fecharModalLoja()" class="relatorio-button" style="background:#aaa;">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modalProduto" class="modal-overlay">
+    <div class="modal-conteudo">
+        <h3>Selecionar Produto</h3>
+        <select id="modalProdutoSelect">
+            @foreach (var p in Model.Produtos)
+            {
+                <option value="@p.Value">@p.Text</option>
+            }
+        </select>
+        <div class="modal-botoes">
+            <button onclick="gerarRelatorioProdutoViaModal()" class="relatorio-button">Gerar PDF</button>
+            <button onclick="fecharModalProduto()" class="relatorio-button" style="background:#aaa;">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- ==========  SCRIPTS (inalterados)  ========== -->
+<script>
+    const utilizadorId = '@adminId';
+
+    function toggleMensagemModal() {
+        const modal = document.getElementById('mensagemModal');
+        modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    async function enviarMensagem() {
+        const texto = document.querySelector('#mensagemModal textarea').value;
+        if (texto.trim() === '') { alert('Escreve uma mensagem primeiro!'); return; }
+
+        const mensagem = { conteudo: texto, idUtilizador: parseInt(utilizadorId) };
+        try {
+            const response = await fetch('http://localhost:5000/api/mensagem/enviar', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(mensagem)
+            });
+            if (!response.ok) throw new Error('Erro ao enviar mensagem');
+            alert('Mensagem enviada!');
+            document.querySelector('#mensagemModal textarea').value = '';
+            modal.style.display = 'none';
+        } catch (error) { alert('Erro ao enviar: ' + error.message); }
+    }
+
+    /* ----- Modal Loja ----- */
+    function abrirModalLoja()  { document.getElementById("modalLoja").style.display = "flex"; }
+    function fecharModalLoja() { document.getElementById("modalLoja").style.display = "none"; }
+    function gerarRelatorioLojaViaModal() {
+        const id = document.getElementById("modalLojaSelect").value;
+        if (id) { window.open(`http://localhost:5000/admin/relatorios/gerar-pdf/loja?id=${id}`,'_blank'); fecharModalLoja(); }
+    }
+
+    /* ----- Modal Produto ----- */
+    function abrirModalProduto()  { document.getElementById("modalProduto").style.display = "flex"; }
+    function fecharModalProduto() { document.getElementById("modalProduto").style.display = "none"; }
+    function gerarRelatorioProdutoViaModal() {
+        const id = document.getElementById("modalProdutoSelect").value;
+        if (id) { window.open(`http://localhost:5000/admin/relatorios/gerar-pdf/produto?id=${id}`,'_blank'); fecharModalProduto(); }
+    }
+</script>

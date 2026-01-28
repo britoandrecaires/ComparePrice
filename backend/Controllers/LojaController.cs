@@ -70,5 +70,12 @@ namespace SistemaPrecos.API.Controllers
             return CreatedAtAction(nameof(GetLojas), new { id = loja.LojaId }, null);
         }
 
+        [HttpGet("todas")]
+public async Task<ActionResult<IEnumerable<Loja>>> GetTodasLojas()
+{
+    return await _context.Lojas.ToListAsync();
+}
+
+
     }
 }

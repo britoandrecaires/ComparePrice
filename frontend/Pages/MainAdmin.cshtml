@@ -9,69 +9,183 @@
 }
 
 <style>
+    /* =============================================
+       ESTILOS GERAIS
+       ============================================= */
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #f2f2f2;
         margin: 0;
-        color: #2c2c2c;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f1f1f1;
+        height: 100vh;
+        overflow: visible; /* para que o modal possa aparecer inteiro */
+        display: flex;     /* para manter a sidebar fixa à esquerda */
     }
 
-    .topbar {
+    /* =============================================
+       SIDEBAR
+       ============================================= */
+    .sidebar {
+        width: 260px;
+        background-color: #ffffff;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
-        background-color: #ffffff;
-        border-bottom: 1px solid #ddd;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        padding: 2rem 1rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+        z-index: 1000;
     }
 
-    .logo {
-        height: 80px;
+    .sidebar.closed {
+        transform: translateX(-100%);
     }
 
-    .topbar a {
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0.4rem 0.8rem;
-        border-radius: 6px;
-        transition: background 0.2s ease;
+    .sidebar-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
     }
 
-    .topbar a:hover {
-        background-color: #e2e2e2;
+    .sidebar-top img {
+        width: 150px;
+        height: auto;
     }
 
-    .main-content {
-        text-align: center;
-        padding: 5rem 2rem;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
     }
 
-    .main-content h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: #333;
-    }
-
-    .main-content .button {
-        display: inline-block;
-        margin: 1rem;
-        padding: 1rem 2.5rem;
-        font-size: 1.1rem;
-        font-weight: bold;
-        border-radius: 10px;
-        text-decoration: none;
+    .menu a {
+        display: block;
+        background-color: #2c2c2c;
         color: white;
-        background-color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.8rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
         transition: background 0.3s ease, transform 0.2s ease;
     }
 
-    .main-content .button:hover {
+    .menu a:hover {
         background-color: #111;
         transform: scale(1.05);
     }
 
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem 0;
+    }
+
+    .user-icon {
+        background-color: #2c2c2c;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        z-index: 1001;
+    }
+
+    .user-info-sidebar {
+        margin-top: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #2c2c2c;
+        text-align: center;
+    }
+
+    .user-role {
+        font-size: 0.85rem;
+        color: gray;
+    }
+
+    /* =============================================
+       ÁREA PRINCIPAL
+       ============================================= */
+    .main-container {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        overflow: auto;
+        transition: margin-left 0.3s ease, width 0.3s ease;
+    }
+
+    .main-container.full-width {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 2rem 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        color: #2c2c2c;
+    }
+
+    .user-info {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .toggle-btn {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background-color: #2c2c2c;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 1100;
+        transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+        background-color: #111;
+    }
+
+    /* =============================================
+       BOTÃO FLOUTANTE PARA ABRIR O MODAL DE MENSAGEM
+       ============================================= */
     .mensagem-fab {
         position: fixed;
         bottom: 30px;
@@ -83,7 +197,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         z-index: 1000;
         transition: background-color 0.3s;
@@ -99,6 +213,10 @@
         fill: white;
     }
 
+    /* =============================================
+       O “MODAL” DE ENVIO DE MENSAGEM
+       (mantivemos exatamente o mesmo que você já tinha)
+       ============================================= */
     .mensagem-modal {
         position: fixed;
         bottom: 100px;
@@ -106,9 +224,9 @@
         width: 300px;
         background: white;
         border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         padding: 1rem;
-        display: none;
+        display: none;       /* começa oculto */
         flex-direction: column;
         gap: 0.5rem;
         z-index: 1001;
@@ -138,46 +256,92 @@
     }
 </style>
 
-<!-- Topbar -->
-<div class="topbar">
-    <img src="/img/CP.png" alt="Compare Price" class="logo" />
-    <div>
-        Olá, <strong>@Model.NomeUtilizador</strong>
-        <a asp-page="/Main">Terminar Sessão</a>
+<!-- ========== BOTÃO PARA RECOLHER/EXPANDIR A SIDEBAR ========== -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- =============================================
+     SIDEBAR (com link “Ver Utilizadores” adicionado)
+     ============================================= -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+        <img src="/img/CP.png" alt="Compare Price" />
+        <div class="menu">
+            <!-- Links já existentes -->
+            <a href="/Produtos/ListaAdmin">Listar Produtos</a>
+            <a href="/Lojas/ListaLojas">Listar Lojas</a>
+            <a href="/Categorias/ListaCategorias">Listar Categorias</a>
+            <a asp-page="/Relatorios/EscolherRelatorio">Imprimir PDFs</a>
+            <a href="/VerUtilizadores">Ver Utilizadores</a>
+        </div>
+    </div>
+
+    <!-- AVATAR + NOME (clicável para abrir menu de perfil) -->
+    <div class="user-profile" id="profileToggle">
+        <div class="user-icon">👤</div>
+        <div class="user-info-sidebar">
+            @Model.NomeUtilizador
+            <div class="user-role">Administrador</div>
+        </div>
     </div>
 </div>
 
-<!-- Conteúdo principal -->
-<div class="main-content">
-    <h2>Painel de Administração</h2>
-
-    <a class="button" href="/Produtos/Lista">Listar Produtos</a>
-    <a class="button" href="/Lojas/ListaLojas">Listar Lojas</a>
-    <a class="button" href="/Categorias/ListaCategorias">Listar Categorias</a>
+<!-- =============================================
+     ÁREA PRINCIPAL (conteúdo central)
+     ============================================= -->
+<div class="main-container" id="main">
+    <div class="container">
+        <h2>Painel de Administração</h2>
+        <div class="user-info">Olá, @Model.NomeUtilizador</div>
+    </div>
 </div>
 
-<!-- Botão flutuante para mensagens -->
+<!-- =============================================
+     BOTÃO FLOUTANTE PARA ABRIR O MODAL DE MENSAGEM
+     ============================================= -->
 <div class="mensagem-fab" onclick="toggleMensagemModal()">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M2 2v20l4-4h16V2H2zm16 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
     </svg>
 </div>
 
-<!-- Modal de envio de mensagem -->
+<!-- =============================================
+     “Modal” de Envio de Mensagem (exatamente igual ao original)
+     ============================================= -->
 <div id="mensagemModal" class="mensagem-modal">
     <textarea id="mensagemTexto" placeholder="Escreve a mensagem..."></textarea>
     <button onclick="enviarMensagem()">Enviar</button>
 </div>
 
-<!-- Script -->
-<script>
-    const utilizadorId = '@adminId';
+<!-- =============================================
+     MODAL DE PERFIL (AVATAR) — opcional, se quiser manter
+     ============================================= -->
+<div id="profileModal" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:2000;">
+    <div class="modal-content" style="background-color:#fff; border-radius:12px; padding:1.5rem 1.5rem 2rem; width:320px; max-width:90%; box-shadow:0 8px 20px rgba(0,0,0,0.2); text-align:center; position:relative;">
+        <button class="modal-close" id="modalCloseBtn" style="position:absolute; top:16px; right:16px; background:transparent; border:none; font-size:1.5rem; cursor:pointer; color:#555;">&times;</button>
+        <h3 style="margin:0; font-size:1.4rem; color:#2c2c2c; margin-bottom:1.5rem;">Opções de Perfil</h3>
+        <a asp-page="/Conta/Perfil" style="display:block; width:100%; padding:0.6rem 0; margin-bottom:0.8rem; text-decoration:none; color:#fff; background-color:#2c2c2c; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer; transition:background-color 0.2s ease, transform 0.1s ease;">Editar Perfil</a>
+        <a asp-page="/Conta/CancelarConta" style="display:block; width:100%; padding:0.6rem 0; margin-bottom:0.8rem; text-decoration:none; color:#fff; background-color:#2c2c2c; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer; transition:background-color 0.2s ease, transform 0.1s ease;">Cancelar Conta</a>
+        <a href="/Login" style="display:block; width:100%; padding:0.6rem 0; margin-bottom:0.8rem; text-decoration:none; color:#fff; background-color:#2c2c2c; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer; transition:background-color 0.2s ease, transform 0.1s ease;">Terminar Sessão</a>
+    </div>
+</div>
 
-    function toggleMensagemModal() {
-        const modal = document.getElementById('mensagemModal');
-        modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+<script>
+    /* ========== FUNÇÃO PARA RECOLHER/EXPANDIR A SIDEBAR ========== */
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+        sidebar.classList.toggle('closed');
+        main.classList.toggle('full-width');
     }
 
+    /* ========== FUNÇÃO PARA ABRIR/FECHAR O MODAL DE MENSAGEM ========== */
+    function toggleMensagemModal() {
+        const modal = document.getElementById('mensagemModal');
+        // Alterna entre display:flex (mostrar) e display:none (esconder)
+        modal.style.display = (modal.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    /* ========== FUNÇÃO PARA ENVIAR MENSAGEM PARA A API ========== */
     async function enviarMensagem() {
         const texto = document.querySelector('#mensagemModal textarea').value;
         if (texto.trim() === '') {
@@ -187,7 +351,7 @@
 
         const mensagem = {
             conteudo: texto,
-            idUtilizador: parseInt(utilizadorId)
+            idUtilizador: parseInt('@adminId')
         };
 
         try {
@@ -210,4 +374,29 @@
             alert('Erro ao enviar: ' + error.message);
         }
     }
+
+    /* ========== LÓGICA DO MODAL DE PERFIL (AVATAR) ========== */
+    document.addEventListener("DOMContentLoaded", function() {
+        var profileToggle = document.getElementById("profileToggle");
+        var profileModal = document.getElementById("profileModal");
+        var modalCloseBtn = document.getElementById("modalCloseBtn");
+
+        // Ao clicar no avatar, abre o modal
+        profileToggle.addEventListener("click", function(event) {
+            event.stopPropagation();
+            profileModal.style.display = "flex";
+        });
+
+        // Ao clicar no botão “×”, fecha o modal
+        modalCloseBtn.addEventListener("click", function() {
+            profileModal.style.display = "none";
+        });
+
+        // Ao clicar no overlay fora da caixa, fecha o modal
+        profileModal.addEventListener("click", function(event) {
+            if (event.target === profileModal) {
+                profileModal.style.display = "none";
+            }
+        });
+    });
 </script>

@@ -1,102 +1,225 @@
-@page "/main"
+@page "/Main"
 @model SistemaPrecos.Web.Pages.MainModel
+
 @{
     ViewData["Title"] = "Compare Price";
 }
 
 <style>
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #f1f1f1;
         margin: 0;
-        color: #2c2c2c;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f1f1f1;
+        height: 100vh;
+        overflow-x: hidden;
+        display: flex;
     }
 
-    .topbar {
+    .sidebar {
+        width: 260px;
+        background-color: #ffffff;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1.2rem 2rem;
-        background-color: #ffffff;
-        border-bottom: 1px solid #ddd;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        padding: 2rem 1rem;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+        z-index: 1000;
     }
 
-    .logo {
-    height: 80px;
-    margin-right: 1rem;
-}
-
-    .topbar a {
-        color: #333;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.5rem 1rem;
-        border-radius: 6px;
-        transition: background 0.3s ease;
+    .sidebar.closed {
+        transform: translateX(-100%);
     }
 
-    .topbar a:hover {
-        background-color: #e2e2e2;
+    .sidebar-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
     }
 
-    .main-content {
-        text-align: center;
-        padding: 5rem 2rem;
+    .sidebar-top img {
+        width: 150px;
+        height: auto;
     }
 
-    .main-content h2 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
     }
 
-    .main-content .button {
-        display: inline-block;
-        margin: 1rem;
-        padding: 1rem 2.5rem;
-        font-size: 1.1rem;
-        font-weight: bold;
-        border-radius: 10px;
-        text-decoration: none;
+    .menu a {
+        display: block;
+        background-color: #2c2c2c;
         color: white;
-        background-color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.8rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
         transition: background 0.3s ease, transform 0.2s ease;
     }
 
-    .main-content .button:hover {
+    .menu a:hover {
         background-color: #111;
         transform: scale(1.05);
     }
 
-    .welcome {
+    .logout {
         margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logout form {
+        width: 80%;
+    }
+
+    .logout button {
+        width: 100%;
+        display: block;
+        background-color: #2c2c2c;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .logout button:hover {
+        background-color: #111;
+        transform: scale(1.05);
+    }
+
+    .main-container {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        transition: margin-left 0.3s ease, width 0.3s ease;
+    }
+
+    .main-container.full-width {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .main-container p {
         font-size: 1.2rem;
         color: #555;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .buttons a {
+        background-color: #2c2c2c;
+        color: white;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .buttons a:hover {
+        background-color: #111;
+        transform: scale(1.05);
+    }
+
+    .toggle-btn {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background-color: #2c2c2c;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 1100;
+        transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+        background-color: #111;
     }
 </style>
 
-<div class="topbar">
-    <img src="/img/CP.png" alt="Compare Price" class="logo" />
+<!-- Botão de abrir/fechar sidebar -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
 
-    @if (Model.EstaAutenticado)
-    {
-        <div>
-            Olá, <strong>@Model.NomeUtilizador</strong>
-            <a asp-page="/Logout">Terminar Sessão</a>
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+        <img src="/img/CP.png" alt="Compare Price" />
+
+        <div class="menu">
+            <a href="/Produtos/Lista">Listar Produtos</a>
+            <a href="/Produtos/Comparar">Comparar Preços</a>
         </div>
-    }
-    else
-    {
-        <a href="/Login" class="login-link">Login</a>
-    }
+    </div>
+
+    <div class="logout">
+        @if (Model.EstaAutenticado)
+        {
+            <form method="post" asp-page-handler="Logout">
+                <button type="submit">Terminar Sessão</button>
+            </form>
+        }
+        else
+        {
+            <form method="get" action="/Login">
+                <button type="submit">Entrar</button>
+            </form>
+        }
+    </div>
 </div>
 
-<div class="main-content">
-    @if (!Model.EstaAutenticado)
-    {
-        <div class="welcome">Bem-vindo à plataforma <strong>Compare Price</strong>.<br />Explore e compare os melhores preços disponíveis.</div>
-    }
+<div class="main-container" id="main">
+    <h1>Bem-vindo à plataforma <strong>Compare Price</strong></h1>
+    <p>Explore e compare os melhores preços disponíveis.</p>
 
-    <a class="button" href="/Produtos/Lista">Listar Produtos</a>
-    <a class="button" href="/Produtos/Comparar">Comparar Preços</a>
 </div>
+
+<script>
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+
+        sidebar.classList.toggle('closed');
+        main.classList.toggle('full-width');
+    }
+</script>

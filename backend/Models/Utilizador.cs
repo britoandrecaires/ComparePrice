@@ -27,5 +27,7 @@ namespace SistemaPrecos.API.Models
 
         [ForeignKey("TipoUtilizadorId")]
         public TipoUtilizador TipoUtilizador { get; set; }
+         [Column("ativo")]
+        public bool Ativo { get; set; } = true;
     }
 }

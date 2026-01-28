@@ -22,17 +22,27 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
-    .logo {
-        height: 80px;
+    .logo { height: 80px; }
+
+    .topbar a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        transition: background 0.2s ease;
     }
 
-    .container {
-        max-width: 1100px;
+    .topbar a:hover { background-color: #e2e2e2; }
+
+    .form-container {
+        max-width: 600px;
         margin: 3rem auto;
-        padding: 2rem;
-        background-color: #fff;
+        padding: 2.5rem;
+        background-color: white;
         border-radius: 12px;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
@@ -42,47 +52,63 @@
         color: #333;
     }
 
-    .voltar {
-        display: inline-block;
-        margin-bottom: 1.5rem;
-        padding: 0.6rem 1rem;
-        background-color: #333;
-        color: white;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 500;
+    label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
     }
 
-    table {
+    input, select {
         width: 100%;
-        border-collapse: collapse;
+        padding: 0.75rem;
+        margin-top: 0.4rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .btn-submit, .btn-voltar {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .btn-submit {
+        background-color: #333;
+        color: white;
+        width: 100%;
+        transition: background 0.3s ease;
+    }
+
+    .btn-submit:hover { background-color: #111; }
+
+    .btn-voltar {
+        background-color: #999;
+        color: white;
         margin-top: 1rem;
     }
 
-    th, td {
-        padding: 12px 16px;
-        text-align: left;
-        border-bottom: 1px solid #e0e0e0;
+    .btn-voltar:hover { background-color: #777; }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 0.2rem;
+        display: block;
     }
 
-    th {
-        background-color: #444;
-        color: white;
-        font-weight: 600;
-    }
-
-    tr:hover {
-        background-color: #f5f5f5;
-    }
-
-    .empty {
+    .erro {
+        color: red;
+        margin-bottom: 1rem;
+        font-weight: bold;
         text-align: center;
-        color: #888;
-        padding: 2rem;
-        font-style: italic;
     }
 </style>
-
 
 <div class="topbar">
     <img src="/img/CP.png" alt="Compare Price" class="logo" />

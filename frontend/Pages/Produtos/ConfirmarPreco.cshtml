@@ -1,0 +1,168 @@
+@page
+@model ConfirmarPrecoModel
+@{
+    ViewData["Title"] = "Confirmar Preço";
+}
+
+<style>
+    /* ────────── estilos comuns ao site ────────── */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        color: #2c2c2c;
+    }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo { height: 80px; }
+
+    .topbar a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 1rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        transition: background 0.2s ease;
+    }
+    .topbar a:hover { background-color: #e2e2e2; }
+
+    .form-container {
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 2.5rem;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.4rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .btn-submit, .btn-voltar {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .btn-submit {
+        background-color: #333;
+        color: #fff;
+        width: 100%;
+        transition: background 0.3s ease;
+    }
+    .btn-submit:hover { background-color: #111; }
+
+    .btn-voltar {
+        background-color: #999;
+        color: #fff;
+        margin-top: 1rem;
+    }
+    .btn-voltar:hover { background-color: #777; }
+
+    .text-danger { color: #dc3545; font-size: .875rem; margin-top: .2rem; display:block; }
+    .erro        { color:red; margin-bottom:1rem; font-weight:bold; text-align:center; }
+
+    /* ── ajustes específicos desta página ── */
+    .table tbody tr:nth-child(even) { background:#fafafa; }
+
+    .btn-submit.compacto {     /* usado no botão Confirmar */
+        width:auto;
+        padding:.45rem 1.2rem;
+    }
+
+    .inline-form { display:inline; margin:0; }
+</style>
+
+<!-- ─────────── topo reutilizado ─────────── -->
+<div class="topbar">
+    <img src="/img/CP.png" alt="Compare Price" class="logo" />
+    <a asp-page="/Login">Terminar Sessão</a>
+</div>
+
+<div class="form-container">
+    <a href="/MainUtilizador" class="btn-voltar">Voltar</a>
+    <h2>Confirmar Preço</h2>
+
+    <!-- ---------- FORM 1 : escolher produto ---------- -->
+    <form method="get" style="display:flex;gap:1rem;align-items:flex-end">
+        <div style="flex:1">
+            <label>Produto:</label>
+            <select asp-for="ProdutoId" asp-items="Model.Produtos"></select>
+        </div>
+        <button type="submit" class="btn-submit compacto">Listar</button>
+    </form>
+
+    <!-- ---------- tabela de preços + botão Confirmar ---------- -->
+    @if (Model.ListaPrecos is not null)
+    {
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Loja</th>
+                    <th>Localização</th>
+                    <th>Preço</th>
+                    <th>Data</th>
+                    <th>Credibilidade</th>
+                    <th style="width:130px"></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var p in Model.ListaPrecos)
+            {
+                <tr>
+                    <td>@p.Loja</td>
+                    <td>@p.Localizacao</td>
+                    <td>@p.Preco.ToString("0.00€")</td>
+                    <td>@p.DataRegisto.ToString("dd/MM/yyyy")</td>
+                    <td>@p.Credibilidade.ToString("0.##")</td>
+                    <td>
+                        <form method="post" asp-page-handler="Confirmar"
+                              asp-route-id="@p.RegistoPrecoId" class="inline-form">
+                            <button class="btn-submit compacto">Confirmar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Erro))
+    {
+        <div class="erro">@Model.Erro</div>
+    }
+</div>

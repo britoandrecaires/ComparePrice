@@ -82,6 +82,12 @@ namespace SistemaPrecos.API.Controllers
 
             return Ok(resultado);
         }
+        [HttpGet("todos")]
+public async Task<ActionResult<IEnumerable<Produto>>> GetTodosProdutos()
+{
+    return await _context.Produtos.ToListAsync();
+}
+
 
     }
 }

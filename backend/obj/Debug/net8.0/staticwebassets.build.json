@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "VABkirKnKmBgcHhqybRF1RlO7ooSNwZVkgIgYzX4JS8=",
-  "Source": "SistemaPrecos.API",
-  "BasePath": "_content/SistemaPrecos.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"yMOzAA96aBt1SNme8Sthpxe7U4tJZ1iZlV/ve9MR9PA=","Source":"SistemaPrecos.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

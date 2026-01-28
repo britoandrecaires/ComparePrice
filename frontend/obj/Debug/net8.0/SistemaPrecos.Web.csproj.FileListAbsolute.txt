@@ -137,3 +137,90 @@ C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.pdb
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.genruntimeconfig.cache
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\frontend\obj\Debug\net8.0\ref\SistemaPrecos.Web.dll
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\appsettings.json
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.staticwebassets.runtime.json
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.exe
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.deps.json
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.runtimeconfig.json
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.dll
+C:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.pdb
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfoInputs.cache
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfo.cs
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.csproj.CoreCompileInputs.cache
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cache
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cs
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.sourcelink.json
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.SistemaPrecos.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaPrecos.Web.props
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaPrecos.Web.props
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaPrecos.Web.props
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.Web.styles.css
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.dll
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\refint\SistemaPrecos.Web.dll
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.pdb
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.genruntimeconfig.cache
+C:\ES-2\ES-2\frontend\obj\Debug\net8.0\ref\SistemaPrecos.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\appsettings.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.staticwebassets.runtime.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.exe
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.deps.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.runtimeconfig.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.pdb
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cs
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.sourcelink.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.SistemaPrecos.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaPrecos.Web.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaPrecos.Web.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaPrecos.Web.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.Web.styles.css
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\refint\SistemaPrecos.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.pdb
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\frontend\obj\Debug\net8.0\ref\SistemaPrecos.Web.dll
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfoInputs.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.AssemblyInfo.cs
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.csproj.CoreCompileInputs.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.RazorAssemblyInfo.cs
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.sourcelink.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.dll
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\refint\SistemaPrecos.Web.dll
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.pdb
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\appsettings.json
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.staticwebassets.runtime.json
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.staticwebassets.endpoints.json
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.exe
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.deps.json
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.runtimeconfig.json
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.dll
+D:\ES-2\ES-2\frontend\bin\Debug\net8.0\SistemaPrecos.Web.pdb
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.Web.styles.css
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.build.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.development.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\swae.build.ex.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\SistemaPrecos.Web.genruntimeconfig.cache
+D:\ES-2\ES-2\frontend\obj\Debug\net8.0\ref\SistemaPrecos.Web.dll

@@ -5,6 +5,7 @@
 }
 
 <style>
+    /* ────────── estilos comuns ────────── */
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f2f2f2;
@@ -22,9 +23,7 @@
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
-    .logo {
-        height: 80px;
-    }
+    .logo { height: 80px; }
 
     .topbar a {
         color: #333;
@@ -35,18 +34,15 @@
         border-radius: 6px;
         transition: background 0.2s ease;
     }
-
-    .topbar a:hover {
-        background-color: #e2e2e2;
-    }
+    .topbar a:hover { background-color: #e2e2e2; }
 
     .form-container {
         max-width: 600px;
         margin: 3rem auto;
         padding: 2.5rem;
-        background-color: white;
+        background-color: #fff;
         border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
     h2 {
@@ -62,8 +58,7 @@
         font-weight: bold;
     }
 
-    input,
-    select {
+    input, select {
         width: 100%;
         padding: 0.75rem;
         margin-top: 0.4rem;
@@ -82,51 +77,41 @@
         text-decoration: none;
         font-size: 1rem;
     }
-
     .btn-submit {
         background-color: #333;
-        color: white;
-        width: 100%;
+        color: #fff;
+        width: 100%;                     /* largura total por defeito           */
         transition: background 0.3s ease;
     }
+    .btn-submit:hover { background-color: #111; }
 
-    .btn-submit:hover {
-        background-color: #111;
+    .btn-submit.compacto {              /* botão compacto (Listar)             */
+        width: auto;
+        padding: .45rem 1.2rem;
     }
 
     .btn-voltar {
         background-color: #999;
-        color: white;
+        color: #fff;
         margin-top: 1rem;
     }
+    .btn-voltar:hover { background-color: #777; }
 
-    .btn-voltar:hover {
-        background-color: #777;
-    }
+    .text-danger { color: #dc3545; font-size: .875rem; margin-top: .2rem; display:block; }
+    .erro        { color:red; margin-bottom:1rem; font-weight:bold; text-align:center; }
 
-    .text-danger {
-        color: #dc3545;
-        font-size: 0.875rem;
-        margin-top: 0.2rem;
-        display: block;
-    }
-
-    .erro {
-        color: red;
-        margin-bottom: 1rem;
-        font-weight: bold;
-        text-align: center;
-    }
+    /* ── estética da tabela ── */
+    .table tbody tr:nth-child(even) { background:#fafafa; }
 </style>
 
-<!-- topo reutilizado -->
+<!-- ───────── topo reutilizado ───────── -->
 <div class="topbar">
     <img src="/img/CP.png" alt="Compare Price" class="logo" />
     <a asp-page="/Login">Terminar Sessão</a>
 </div>
 
 <div class="form-container">
-    <a href="javascript:history.back()" class="btn-voltar">Voltar</a>
+    <a href="/MainUtilizador" class="btn-voltar">Voltar</a>
     <h2>Registar Preço</h2>
 
     <!-- ---------- FORM 1 : escolher produto ---------- -->
@@ -136,7 +121,7 @@
             <select asp-for="ProdutoId" asp-items="Model.Produtos"></select>
             <span asp-validation-for="ProdutoId" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn-submit" style="width:auto">Listar</button>
+        <button type="submit" class="btn-submit compacto">Listar</button>
     </form>
 
     <!-- ---------- tabela de preços (apenas se houver) ---------- -->
@@ -150,7 +135,7 @@
                     <th>Localização</th>
                     <th>Preço</th>
                     <th>Data</th>
-                    <th>Credibilidade</th> 
+                    <th>Credibilidade</th>
                 </tr>
             </thead>
             <tbody>

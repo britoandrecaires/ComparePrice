@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "HeY1HCFjP7E=",
+  "dgSpecHash": "zTF0ggIMtH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc131\\OneDrive\\Ambiente de Trabalho\\UNI\\2ºano\\Semestre 2\\ES2\\ES-2\\ES-2\\frontend\\SistemaPrecos.Web.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\ES-2\\ES-2\\frontend\\SistemaPrecos.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

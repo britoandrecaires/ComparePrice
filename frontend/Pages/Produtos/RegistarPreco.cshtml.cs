@@ -12,14 +12,12 @@ public class RegistarPrecoModel : PageModel
     [BindProperty] public int LojaId { get; set; }
     [BindProperty] public decimal Preco { get; set; }
 
-    // ---------- dados para a view ----------
     public List<SelectListItem> Produtos { get; set; } = new();
     public List<SelectListItem> Lojas    { get; set; } = new();
     public List<PrecoLinhaVM>?  ListaPrecos { get; set; }
 
     public string? Erro { get; set; }
 
-    // ---------- GET ----------
     public async Task OnGetAsync() => await CarregarDadosAsync();
 
     // ---------- POST : registar novo preço ----------

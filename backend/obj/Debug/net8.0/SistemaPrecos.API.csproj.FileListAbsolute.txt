@@ -667,3 +667,433 @@ C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.pdb
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.genruntimeconfig.cache
 C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\obj\Debug\net8.0\ref\SistemaPrecos.API.dll
+C:\Users\gonca\OneDrive\Ambiente de Trabalho\VSCode\ES-2\ES-2\backend\bin\Debug\net8.0\PdfSharpCore.dll
+C:\Users\gonca\OneDrive\Ambiente de Trabalho\VSCode\ES-2\ES-2\backend\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+C:\Users\gonca\OneDrive\Ambiente de Trabalho\VSCode\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\gonca\OneDrive\Ambiente de Trabalho\VSCode\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\gonca\OneDrive\Ambiente de Trabalho\VSCode\ES-2\ES-2\backend\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\appsettings.json
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.exe
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.deps.json
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.runtimeconfig.json
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.pdb
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Humanizer.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\PdfSharpCore.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.CodeDom.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Json.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+C:\ES-2\ES-2\backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.AssemblyReference.cache
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfoInputs.cache
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfo.cs
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.CoreCompileInputs.cache
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cs
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cache
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.sourcelink.json
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.SistemaPrecos.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaPrecos.API.props
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaPrecos.API.props
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaPrecos.API.props
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.API.styles.css
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaP.30402338.Up2Date
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.dll
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\refint\SistemaPrecos.API.dll
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.pdb
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.genruntimeconfig.cache
+C:\ES-2\ES-2\backend\obj\Debug\net8.0\ref\SistemaPrecos.API.dll
+C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\bin\Debug\net8.0\PdfSharpCore.dll
+C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\backend\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\appsettings.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.exe
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.deps.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.runtimeconfig.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.pdb
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Humanizer.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\PdfSharpCore.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.AssemblyReference.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfoInputs.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfo.cs
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.sourcelink.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.SistemaPrecos.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaPrecos.API.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaPrecos.API.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaPrecos.API.props
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.API.styles.css
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaP.30402338.Up2Date
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\refint\SistemaPrecos.API.dll
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.pdb
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.genruntimeconfig.cache
+C:\Users\andre\OneDrive\Creative Cloud Files\Ambiente de Trabalho\ES-2\ES-2\backend\obj\Debug\net8.0\ref\SistemaPrecos.API.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\appsettings.json
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.staticwebassets.endpoints.json
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.exe
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.deps.json
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.runtimeconfig.json
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SistemaPrecos.API.pdb
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Humanizer.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\PdfSharpCore.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.CodeDom.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\System.Text.Json.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
+D:\ES-2\ES-2\backend\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.AssemblyReference.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfoInputs.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.AssemblyInfo.cs
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.csproj.CoreCompileInputs.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cs
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.MvcApplicationPartsAssemblyInfo.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.sourcelink.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\scopedcss\bundle\SistemaPrecos.API.styles.css
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.build.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.development.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\swae.build.ex.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaP.30402338.Up2Date
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.dll
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\refint\SistemaPrecos.API.dll
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.pdb
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\SistemaPrecos.API.genruntimeconfig.cache
+D:\ES-2\ES-2\backend\obj\Debug\net8.0\ref\SistemaPrecos.API.dll

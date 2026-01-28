@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
@@ -9,67 +11,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SistemaPrecos.Web
 build_property.RootNamespace = SistemaPrecos.Web
-build_property.ProjectDir = C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\frontend\
+build_property.ProjectDir = D:\ES-2\ES-2\frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\pc131\OneDrive\Ambiente de Trabalho\UNI\2ºano\Semestre 2\ES2\ES-2\ES-2\frontend
+build_property.MSBuildProjectDirectory = D:\ES-2\ES-2\frontend
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Categorias/ListaCategorias.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Categorias/ListaCategorias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xMaXN0YUNhdGVnb3JpYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Login.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Conta/CancelarConta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFcQ2FuY2VsYXJDb250YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Conta/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFcUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Lojas/CriarLoja.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Lojas/CriarLoja.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9qYXNcQ3JpYXJMb2phLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Lojas/ListaLojas.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Lojas/ListaLojas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9qYXNcTGlzdGFMb2phcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Main.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/MainAdmin.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/MainAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbkFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/MainUtilizador.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/MainUtilizador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpblV0aWxpemFkb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Produtos/Comparar.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Produtos/Comparar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ29tcGFyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Produtos/CriarProduto.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Produtos/CompararUtl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ29tcGFyYXJVdGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Produtos/ConfirmarPreco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ29uZmlybWFyUHJlY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Produtos/CriarProduto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcQ3JpYXJQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Produtos/Detalhes.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Produtos/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcRGV0YWxoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Produtos/Lista.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Produtos/Lista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcTGlzdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Produtos/RegistarPreco.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Produtos/ListaAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcTGlzdGFBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Produtos/PrecosAtuais.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcUHJlY29zQXR1YWlzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/Produtos/RegistarPreco.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b3NcUmVnaXN0YXJQcmVjby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/Registar.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Registar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc131/OneDrive/Ambiente de Trabalho/UNI/2ºano/Semestre 2/ES2/ES-2/ES-2/frontend/Pages/_ViewImports.cshtml]
+[D:/ES-2/ES-2/frontend/Pages/Relatorios/EscolherRelatorio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVsYXRvcmlvc1xFc2NvbGhlclJlbGF0b3Jpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/VerUtilizadores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyVXRpbGl6YWRvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ES-2/ES-2/frontend/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

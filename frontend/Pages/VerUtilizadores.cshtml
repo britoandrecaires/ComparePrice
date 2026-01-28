@@ -1,0 +1,109 @@
+@page
+@model VerUtilizadoresModel
+@{
+    ViewData["Title"] = "Utilizadores";
+}
+
+<style>
+    /* --- usa os estilos das outras páginas --- */
+    body{font-family:'Segoe UI',Tahoma,Verdana,sans-serif;background:#f2f2f2;margin:0;color:#2c2c2c}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#fff;border-bottom:1px solid #ddd;box-shadow:0 2px 5px rgba(0,0,0,.05)}
+    .logo{height:80px}
+    .topbar a{color:#333;text-decoration:none;font-weight:bold;margin-left:1rem;padding:.4rem .8rem;border-radius:6px;transition:background .2s}
+    .topbar a:hover{background:#e2e2e2}
+    .form-container{max-width:800px;margin:3rem auto;padding:2.5rem;background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+    h2{text-align:center;margin-bottom:2rem;font-size:1.8rem;color:#333}
+    .table{width:100%;border-collapse:collapse}
+    .table thead th{text-align:left;padding:.6rem 0}
+    .table td{padding:.45rem 0}
+    .table tbody tr:nth-child(even){background:#fafafa}
+    .btn-delete{background:#c62828;color:#fff;border:none;padding:.4rem 1.2rem;border-radius:8px;font-weight:bold;cursor:pointer;transition:background .2s}
+    .btn-delete:hover{background:#931d1d}
+    .ok{color:green;margin-top:1rem;font-weight:bold;text-align:center}
+    .erro{color:red;margin-top:1rem;font-weight:bold;text-align:center}
+    .inline-form{ display:inline; margin:0; }
+    .btn-ativar{ background:#2c7d2c; color:#fff; border:none; padding:.4rem 1.2rem;
+               border-radius:8px; font-weight:bold; cursor:pointer; transition:background .2s; margin-left:.6rem; }
+    .btn-ativar:hover{ background:#205e20; }
+    .btn-cell{ white-space: nowrap; }
+    .voltar{ 
+        top: 1.5rem;
+        left: 2rem;
+        display: inline-block;
+        padding: .6rem 1rem;
+        background: #333;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background .2s;}
+    .voltar:hover{ background: #111; }
+    .btn-group{ display: inline-flex; gap: .6rem; 
+     
+   
+    
+}
+
+</style>
+
+<div class="topbar">
+    <img src="/img/CP.png" class="logo">
+    <a asp-page="/Login">Terminar Sessão</a>
+</div>
+
+<div class="form-container">
+
+    <a href="/MainAdmin" class="voltar">Voltar</a>
+
+    <h2>Utilizadores</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Tipo</th>
+                <th>Estado</th>
+                <th style="width:160px"></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var u in Model.Utilizadores)
+        {
+            <tr>
+                <td>@u.Nome</td>
+                <td>@u.Username</td>
+                <td>@u.Email</td>
+                <td>@u.TipoUtilizador</td>
+                <td>@(u.Ativo ? "Ativo" : "Inativo")</td>
+                <td class="btn-cell">
+                    <div class="btn-group">
+                        <form method="post" asp-page-handler="Eliminar"
+                            asp-route-id="@u.UtilizadorId" class="inline-form">
+                            <button class="btn-delete">Eliminar</button>
+                        </form>
+
+                        @if (!u.Ativo)
+                        {
+                            <form method="post" asp-page-handler="Ativar"
+                                asp-route-id="@u.UtilizadorId" class="inline-form">
+                                <button class="btn-ativar">Ativar</button>
+                            </form>
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    @if (!string.IsNullOrEmpty(Model.MensagemOk))
+    {
+        <div class="ok">@Model.MensagemOk</div>
+    }
+    @if (!string.IsNullOrEmpty(Model.Erro))
+    {
+        <div class="erro">@Model.Erro</div>
+    }
+</div>

@@ -14,7 +14,6 @@ public class RegistoController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post(RegistoPrecoViewModel vm)
     {
-        // ✅ valida se existem PKs recebidas
         if (!await _ctx.Produtos.AnyAsync(p => p.ProdutoId == vm.ProdutoId))
             return BadRequest(new { Erro = "Produto inexistente" });
 
@@ -23,12 +22,12 @@ public class RegistoController : ControllerBase
 
         var reg = new RegistoPreco
         {
-            ProdutoId    = vm.ProdutoId,
-            LojaId       = vm.LojaId,
-            Preco        = vm.Preco,
+            ProdutoId = vm.ProdutoId,
+            LojaId = vm.LojaId,
+            Preco = vm.Preco,
             UtilizadorId = vm.UtilizadorId,
-            TipoAcaoId   = vm.TipoAcaoId,
-            DataRegisto  = DateTime.UtcNow,
+            TipoAcaoId = vm.TipoAcaoId,
+            DataRegisto = DateTime.UtcNow,
             Credibilidade = 5
         };
 
@@ -40,25 +39,24 @@ public class RegistoController : ControllerBase
     [HttpGet("produto/{produtoId:int}")]
     public async Task<ActionResult<IEnumerable<PrecoLinhaVM>>> PorProduto(int produtoId)
     {
-        // 1) busca as colunas necessárias
         var dados = await
-            (from r   in _ctx.RegistoPrecos
-            join l   in _ctx.Lojas          on r.LojaId        equals l.LojaId
-            join loc in _ctx.Localizacoes   on l.LocalizacaoId equals loc.LocalizacaoId
-            where r.ProdutoId == produtoId
-            orderby r.DataRegisto descending
-            select new
-            {
-                l.Nome,
-                Localizacao = loc.Cidade + " (" + loc.CodigoPostal + ")",
-                r.Preco,
-                r.DataRegisto
-            })
+            (from r in _ctx.RegistoPrecos
+             join l in _ctx.Lojas on r.LojaId equals l.LojaId
+             join loc in _ctx.Localizacoes on l.LocalizacaoId equals loc.LocalizacaoId
+             where r.ProdutoId == produtoId
+             orderby r.DataRegisto descending
+             select new
+             {
+                 r.RegistoPrecoId,                       //  ←  novo campo
+                 l.Nome,
+                 Localizacao = loc.Cidade + " (" + loc.CodigoPostal + ")",
+                 r.Preco,
+                 r.DataRegisto
+             })
             .ToListAsync();
 
-        // 2) calcula credibilidade “on-the-fly”
         var agora = DateTime.UtcNow;
-        const double decaimentoDia = 0.02;          // 0,02/dia  ⇒ 0 em 50 dias
+        const double decaimentoDia = 0.02;
 
         var result = dados.Select(x =>
         {
@@ -66,22 +64,91 @@ public class RegistoController : ControllerBase
             var cred = Math.Max(0, 1 - dias * decaimentoDia);
 
             return new PrecoLinhaVM(
-                Loja:         x.Nome,
-                Localizacao:  x.Localizacao,
-                Preco:        x.Preco,
-                DataRegisto:  x.DataRegisto,
-                Credibilidade: cred
+                x.RegistoPrecoId,
+                x.Nome,
+                x.Localizacao,
+                x.Preco,
+                x.DataRegisto,
+                cred
             );
         });
 
         return Ok(result);
     }
 
+    [HttpPut("{registoPrecoId:int}/confirmar")]
+    public async Task<IActionResult> Confirmar(int registoPrecoId)
+    {
+        var reg = await _ctx.RegistoPrecos.FindAsync(registoPrecoId);
+        if (reg is null) return NotFound();
+
+        reg.DataRegisto = DateTime.UtcNow;
+        await _ctx.SaveChangesAsync();
+        return NoContent();
+    }
+
+    //PrecosAtuais
+    [HttpGet("produto/{produtoId:int}/atuais")]
+    public async Task<ActionResult<IEnumerable<PrecoAtualVM>>> PrecosAtuais(int produtoId)
+    {
+        // A) 1º passo: para cada loja, descobrir a data MAIS RECENTE
+        var ultimasDatas =
+            from r in _ctx.RegistoPrecos
+            where r.ProdutoId == produtoId
+            group r by r.LojaId into g
+            select new
+            {
+                LojaId     = g.Key,
+                UltimaData = g.Max(x => x.DataRegisto)
+            };
+
+        // B) 2º passo: voltar a ligar ao registo que tem exactamente essa data
+        var query =
+            from r   in _ctx.RegistoPrecos
+            join u   in ultimasDatas
+                    on new { r.LojaId, r.DataRegisto }
+                    equals new { u.LojaId, DataRegisto = u.UltimaData }
+            join l   in _ctx.Lojas        on r.LojaId        equals l.LojaId
+            join loc in _ctx.Localizacoes on l.LocalizacaoId equals loc.LocalizacaoId
+            where r.ProdutoId == produtoId
+            select new
+            {
+                l.LojaId,
+                Loja        = l.Nome,
+                Localizacao = loc.Cidade + " (" + loc.CodigoPostal + ")",
+                r.Preco,
+                r.DataRegisto
+            };
+
+        // C) executa em SQL, depois ordena/projeta em memória
+        var dados = await query.ToListAsync();
+
+        var resultado = dados
+            .OrderByDescending(x => x.DataRegisto)   // mais recentes 1º
+            .ThenBy(x => x.Preco)                    // depois mais baratos
+            .Select(x => new PrecoAtualVM(
+                x.LojaId,
+                x.Loja,
+                x.Localizacao,
+                x.Preco,
+                x.DataRegisto))
+            .ToList();
+
+        return Ok(resultado);
+    }
+
+    public record PrecoAtualVM(
+        int      LojaId,
+        string   Loja,
+        string   Localizacao,
+        decimal  Preco,
+        DateTime DataRegisto);
+
     public record PrecoLinhaVM(
-        string  Loja,
-        string  Localizacao,
+        int RegistoPrecoId,
+        string Loja,
+        string Localizacao,
         decimal Preco,
         DateTime DataRegisto,
-        double  Credibilidade);
-
+        double Credibilidade);
 }

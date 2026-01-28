@@ -1,16 +1,335 @@
-@page
+@page "/MainUtilizador"
 @model SistemaPrecos.Web.Pages.MainUtilizadorModel
 @{
     ViewData["Title"] = "Área do Utilizador - Compare Price";
 }
-<!-- Ícone flutuante -->
+
+<style>
+    /* ========================  ESTILOS GERAIS E SIDEBAR  ======================== */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f1f1f1;
+        height: 100vh;
+        overflow: visible; /* Permite que o modal apareça inteiro */
+        display: flex;
+    }
+
+    /* --- Sidebar --- */
+    .sidebar {
+        width: 260px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    .sidebar.closed {
+        transform: translateX(-100%);
+    }
+
+    .sidebar-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+
+    .sidebar-top img {
+        width: 150px;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu a {
+        display: block;
+        background-color: #2c2c2c;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.8rem 2rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 80%;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .menu a:hover {
+        background-color: #111;
+        transform: scale(1.05);
+    }
+
+    /* --- Avatar + Nome no final do Sidebar --- */
+    .user-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        padding: 1rem 0;
+    }
+
+    .user-icon {
+        background-color: #2c2c2c;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        z-index: 1001;
+    }
+
+    .user-info-sidebar {
+        margin-top: 0.5rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #2c2c2c;
+        text-align: center;
+    }
+
+    .user-role {
+        font-size: 0.85rem;
+        color: gray;
+    }
+
+    /* ========================  ESTILOS DA ÁREA PRINCIPAL  ======================== */
+    .main-container {
+        margin-left: 260px;
+        width: calc(100% - 260px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        overflow: auto;
+    }
+
+    .container {
+        background-color: #fff;
+        padding: 2rem 3rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        color: #2c2c2c;
+    }
+
+    .user-info {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .toggle-btn {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        background-color: #2c2c2c;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 1100;
+        transition: background 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+        background-color: #111;
+    }
+
+    /* ========================  BOTÃO FLUTUANTE DE MENSAGENS  ======================== */
+    .mensagem-fab {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #2c2c2c;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        transition: background 0.3s ease;
+    }
+
+    .mensagem-fab:hover {
+        background-color: #111;
+    }
+
+    .mensagem-box {
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 320px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        padding: 1.2rem;
+        z-index: 1001;
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    .mensagem-box.open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    /* ========================  ESTILOS DO MODAL (CENTRADO)  ======================== */
+
+    /* Overlay semitransparente atrás do modal */
+    .modal-overlay {
+        display: none;                   /* Começa oculto */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 2000;                  /* Por cima de tudo */
+        justify-content: center;        /* Centraliza horizontalmente */
+        align-items: center;            /* Centraliza verticalmente */
+    }
+
+    /* Caixa branca do modal */
+    .modal-content {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 1.5rem 1.5rem 2rem;  /* Afastamento do topo e rodeia botões */
+        width: 320px;
+        max-width: 90%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;           /* Para posicionar o “×” dentro dela */
+    }
+
+    /* Título centralizado */
+    .modal-content h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #2c2c2c;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Botão “×” para fechar: pequeno, sem fundo, posicionado no canto superior direito */
+    .modal-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;    /* Tamanho bem reduzido */
+        cursor: pointer;
+        color: #555;
+        transition: color 0.2s ease;
+    }
+
+    .modal-close:hover {
+        color: #111;
+    }
+
+    /* Botões internos do modal (Editar Perfil / Cancelar Conta / Terminar Sessão) */
+    .modal-content a {
+        display: block;
+        width: 100%;
+        padding: 0.6rem 0;
+        margin-bottom: 0.8rem;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #2c2c2c;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .modal-content a:hover {
+        background-color: #111;
+        transform: scale(1.02);
+    }
+</style>
+
+<!-- ========== Botão para recolher/expandir o sidebar ========== -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- ========================  SIDEBAR  ======================== -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+        <img src="/img/CP.png" alt="Compare Price" />
+        <div class="menu">
+            <a href="/Produtos/CompararUtl">Comparar Preços</a>
+            <a href="/Produtos/RegistarPreco">Registar Preço</a>
+            <a href="/Produtos/ConfirmarPreco">Confirmar Preço</a>
+            <a href="/Produtos/CriarProduto">Registar Produto</a>
+            <a href="/Lojas/CriarLoja">Registar Loja</a>
+            <a href="/Produtos/PrecosAtuais">Preços Atuais</a>
+        </div>
+    </div>
+    <!-- =======================  AVATAR + NOME  ======================= -->
+    <div class="user-profile" id="profileToggle">
+        <div class="user-icon">👤</div>
+        <div class="user-info-sidebar">
+            @Model.NomeUtilizador
+            <div class="user-role">Utilizador</div>
+        </div>
+    </div>
+</div>
+
+<!-- ========================  ÁREA PRINCIPAL  ======================== -->
+<div class="main-container" id="main">
+    <div class="container">
+        <h2>Área do Utilizador</h2>
+        <div class="user-info">Olá, @Model.NomeUtilizador</div>
+    </div>
+</div>
+
+<!-- ========================  BOTÃO FLUTUANTE DE MENSAGENS  ======================== -->
 <div class="mensagem-fab" onclick="toggleMensagemBox()">
     <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28" height="28">
         <path d="M2 2v20l4-4h16V2H2zm16 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
     </svg>
 </div>
 
-<!-- Caixa de mensagens -->
 <div id="mensagemBox" class="mensagem-box">
     <h3>Mensagens do Administrador</h3>
     <ul>
@@ -23,152 +342,37 @@
         }
     </ul>
 </div>
-<style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f2f2f2;
-        margin: 0;
-        color: #2c2c2c;
-    }
 
-    .topbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #ffffff;
-        border-bottom: 1px solid #ddd;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+<!-- ========================  MODAL (MENU DE PERFIL)  ======================== -->
+<div id="profileModal" class="modal-overlay">
+    <div class="modal-content">
+        <!-- Botão “×” (fechar) pequeno, sem fundo, posicionado no canto superior direito -->
+        <button class="modal-close" id="modalCloseBtn">&times;</button>
 
-    .logo {
-        height: 80px;
-    }
+        <!-- Título centralizado -->
+        <h3>Opções de Perfil</h3>
 
-    .topbar a {
-        color: #333;
-        text-decoration: none;
-        font-weight: bold;
-        margin-left: 1rem;
-        padding: 0.4rem 0.8rem;
-        border-radius: 6px;
-        transition: background 0.2s ease;
-    }
+        <!-- Botões internos (todos idênticos) -->
+        <a asp-page="/Conta/Perfil">Editar Perfil</a>
+        <a asp-page="/Conta/CancelarConta">Cancelar Conta</a>
+        <!-- Terminar Sessão agora redireciona para /Login -->
+        <a href="/Login">Terminar Sessão</a>
+    </div>
+</div>
 
-    .topbar a:hover {
-        background-color: #e2e2e2;
-    }
-
-    .main-content {
-        text-align: center;
-        padding: 5rem 2rem;
-    }
-
-    .main-content h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .main-content .button {
-        display: inline-block;
-        margin: 1rem;
-        padding: 1rem 2.5rem;
-        font-size: 1.1rem;
-        font-weight: bold;
-        border-radius: 10px;
-        text-decoration: none;
-        color: white;
-        background-color: #333;
-        transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .main-content .button:hover {
-        background-color: #111;
-        transform: scale(1.05);
-    }
-
-    .mensagem-fab {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background-color: #333;
-        color: white;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        z-index: 1000;
-    }
-
-    .mensagem-box {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    width: 320px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    padding: 1.2rem;
-    z-index: 1001;
-
-    opacity: 0;
-    transform: translateY(20px);
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-}
-.mensagem-box.open {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-}
-
-
-
-    .mensagem-box h3 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-        color: #333;
-    }
-
-    .mensagem-box ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        max-height: 250px;
-        overflow-y: auto;
-    }
-
-    .mensagem-box li {
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 0.5rem;
-    }
-
-    .mensagem-box .data {
-        font-size: 0.85rem;
-        color: #999;
-        display: block;
-    }
-
-    .mensagem-box .texto {
-        font-size: 0.95rem;
-        color: #222;
-        margin-top: 0.2rem;
-    }
-</style>
 <script>
+    /* ========================  FUNÇÕES AUXILIARES  ======================== */
+    function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const main = document.getElementById('main');
+        sidebar.classList.toggle('closed');
+        main.classList.toggle('full-width');
+    }
+
     function toggleMensagemBox() {
         const box = document.getElementById('mensagemBox');
-
         if (box.classList.contains('open')) {
             box.classList.remove('open');
-
-            // Mantém visível até a transição acabar
             setTimeout(() => {
                 if (!box.classList.contains('open')) {
                     box.style.visibility = 'hidden';
@@ -180,21 +384,28 @@
         }
     }
 
+    /* ========================  LÓGICA DO MODAL DE PERFIL  ======================== */
+    document.addEventListener("DOMContentLoaded", function() {
+        var profileToggle = document.getElementById("profileToggle");
+        var profileModal = document.getElementById("profileModal");
+        var modalCloseBtn = document.getElementById("modalCloseBtn");
+
+        // Ao clicar no avatar, abre o modal
+        profileToggle.addEventListener("click", function(event) {
+            event.stopPropagation();
+            profileModal.style.display = "flex"; // “flex” para centralizar vertical/horizontalmente
+        });
+
+        // Ao clicar no botão “×”, fecha o modal
+        modalCloseBtn.addEventListener("click", function() {
+            profileModal.style.display = "none";
+        });
+
+        // Ao clicar no overlay (fora do box), fecha o modal
+        profileModal.addEventListener("click", function(event) {
+            if (event.target === profileModal) {
+                profileModal.style.display = "none";
+            }
+        });
+    });
 </script>
-<div class="topbar">
-    <img src="/img/CP.png" alt="Compare Price" class="logo" />
-
-    <div>
-        Olá, <strong>@Model.NomeUtilizador</strong>
-        <a asp-page="/Main">Terminar Sessão</a>
-    </div>
-</div>
-
-<div class="main-content">
-    <h2>Área do Utilizador</h2>
-
-    <a class="button" href="/Produtos/Comparar">Comparar Preços</a>
-    <a class="button" href="/Produtos/RegistarPreco">Registar Preço</a>
-    <a class="button" href="/Produtos/CriarProduto">Registar Produto</a>
-    <a class="button" href="/Lojas/CriarLoja">Registar Loja</a>
-</div>
