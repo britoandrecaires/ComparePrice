@@ -1,6 +1,6 @@
-# ComparePrice (ES-2)
+# ComparePrice 
 
-Aplicação web para comparação e gestão de preços, desenvolvida no âmbito do projeto ES-2.
+Aplicação web para comparação e gestão de preços, desenvolvida no âmbito do projeto ESII(Engenharia Software).
 
 ## Stack / Tecnologias
 
